@@ -1,0 +1,11 @@
+export DBT_PROJECT=innate-mix-431117-q9
+export DBT_DATASET_TEST=dbt_test
+export DBT_DATASET_PROD=dbt_production
+export DBT_KEYFILE_PATH=C:\\Users\\fanso\\.chaves\\chave_curso_udemy_gcloud_dbt_bigquery\\keyfile.json
+export DBT_LOCATION=US
+export DBT_METHOD=service-account
+export DBT_PRIORITY=interactive
+export DBT_THREADS=1
+export DBT_JOB_TIMEOUT=300
+export DBT_JOB_RETRIES=1
+export DBT_PROFILES_DIR=C:\\Projetos\\dbt-tutorial-course

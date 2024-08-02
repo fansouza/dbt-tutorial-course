@@ -1,0 +1,47 @@
+answers:
+  outputs:
+    dev:
+      dataset: '{{ env_var(''DBT_DATASET_TEST'') }}'
+      keyfile: '{{ env_var(''DBT_KEYFILE_PATH'') }}'
+      location: '{{ env_var(''DBT_LOCATION'') }}'
+      method: '{{ env_var(''DBT_METHOD'') }}'
+      priority: '{{ env_var(''DBT_PRIORITY'') }}'
+      project: '{{ env_var(''DBT_PROJECT'') }}'
+      threads: '{{ env_var(''DBT_THREADS'') | int }}'
+      timeout_seconds: '{{ env_var(''DBT_JOB_TIMEOUT'') | int }}'
+      type: bigquery
+    production:
+      dataset: '{{ env_var(''DBT_DATASET_PROD'') }}'
+      keyfile: '{{ env_var(''DBT_KEYFILE_PATH'') }}'
+      location: '{{ env_var(''DBT_LOCATION'') }}'
+      method: '{{ env_var(''DBT_METHOD'') }}'
+      priority: '{{ env_var(''DBT_PRIORITY'') }}'
+      project: '{{ env_var(''DBT_PROJECT'') }}'
+      threads: '{{ env_var(''DBT_THREADS'') | int }}'
+      timeout_seconds: '{{ env_var(''DBT_JOB_TIMEOUT'') | int }}'
+      type: bigquery
+  target: dev
+
+lessons:
+  outputs:
+    dev:
+      dataset: '{{ env_var(''DBT_DATASET_LESSONS'') }}'
+      keyfile: '{{ env_var(''DBT_KEYFILE_PATH'') }}'
+      location: '{{ env_var(''DBT_LOCATION'') }}'
+      method: '{{ env_var(''DBT_METHOD'') }}'
+      priority: '{{ env_var(''DBT_PRIORITY'') }}'
+      project: '{{ env_var(''DBT_PROJECT'') }}'
+      threads: '{{ env_var(''DBT_THREADS'') | int }}'
+      timeout_seconds: '{{ env_var(''DBT_JOB_TIMEOUT'') | int }}'
+      type: bigquery
+    production:
+      dataset: '{{ env_var(''DBT_DATASET_PROD'') }}'
+      keyfile: '{{ env_var(''DBT_KEYFILE_PATH'') }}'
+      location: '{{ env_var(''DBT_LOCATION'') }}'
+      method: '{{ env_var(''DBT_METHOD'') }}'
+      priority: '{{ env_var(''DBT_PRIORITY'') }}'
+      project: '{{ env_var(''DBT_PROJECT'') }}'
+      threads: '{{ env_var(''DBT_THREADS'') | int }}'
+      timeout_seconds: '{{ env_var(''DBT_JOB_TIMEOUT'') | int }}'
+      type: bigquery
+  target: dev

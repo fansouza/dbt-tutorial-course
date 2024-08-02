@@ -1,5 +1,6 @@
-.venv
-.user.yml
-/logs
-logs
 .env
+answers/target/
+dbt_packages/
+logs/
+lessons/target/
+.venv
